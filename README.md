@@ -1,36 +1,37 @@
-# Projeto Relógio com Servidor Local
+# Local Server Clock Project
 
-Este é um aplicativo de relógio interativo que utiliza um servidor local em Node.js. Ele combina um cronômetro com funcionalidades como foco, progresso de atividades e música de fundo, além de um contador de atividades concluídas.
+This is an interactive clock application that uses a local Node.js server. It combines a stopwatch with functionalities like focus, activity progress tracking, background music, and an activity counter.
 
-## Funcionalidades
+## Features
 
-- Relógio digital atualizado em tempo real.
-- Temporizador de foco para monitorar o tempo de concentração.
-- Barra de progresso dinâmica para acompanhamento visual.
-- Possibilidade de definir metas de atividades e receber notificações ao concluí-las.
-- Música de fundo personalizável com opção de pausa e troca.
-- Exibição de estrelas representando atividades concluídas.
+- Real-time updated digital clock.
+- Focus timer to monitor concentration time.
+- Dynamic progress bar for visual tracking.
+- Ability to set activity goals and receive notifications upon completion.
+- Customizable background music with pause and change options.
+- Display of stars representing completed activities.
 
-## Pré-requisitos
+## Prerequisites
 
-Antes de começar, você precisará ter instalado em sua máquina:
+Before you start, make sure you have the following installed on your machine:
 
-- [Node.js](https://nodejs.org/) (versão 14 ou superior)
-- Navegador 
+- [Node.js](https://nodejs.org/) 
+- A modern web browser 
 
-## Como Executar
+## How to Run
 
-1. **Clone o repositório:**
+1. **Clone the repository:**
 
    ```git clone https://github.com/NearSkys/digital-clock```
 
-2. **Navegue até a pasta do projeto::**
-    ``cd digital-clock``
+2. **Navigate to the project folder:**
+    ```cd digital-clock```
 
-3. **Instale as dependências**
-    ```npm install ```
+3. **Install dependencies:**
+    ```npm install```
 
-4. **Inicie o servidor**
-    ```node server.js ```
-5. **Abra o navegador** 
+4. **Start the server:**
+    ```node server.js```
+
+5. **Open the browser:**
     ```http://localhost:3000```
