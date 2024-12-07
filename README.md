@@ -16,7 +16,7 @@ Este é um aplicativo de relógio interativo que utiliza um servidor local em No
 Antes de começar, você precisará ter instalado em sua máquina:
 
 - [Node.js](https://nodejs.org/) (versão 14 ou superior)
-- Navegador moderno (Chrome, Firefox, Edge, etc.)
+- Navegador 
 
 ## Como Executar
 
@@ -27,10 +27,10 @@ Antes de começar, você precisará ter instalado em sua máquina:
 2. **Navegue até a pasta do projeto::**
     ``cd digital-clock``
 
-3. ** Instale as dependências**
+3. **Instale as dependências**
     ```npm install ```
 
-4. **Inicie o servidor local**
+4. **Inicie o servidor**
     ```node server.js ```
 5. **Abra o navegador** 
     ```http://localhost:3000```
