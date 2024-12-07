@@ -1,0 +1,187 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #07aef5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.clock-container {
+    text-align: center;
+}
+
+.digital-clock {
+    font-size: 6em;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace; /* Apply 'Courier New' font */
+    color: #ffffff; /* Different color for text */
+}
+
+.progress-time {
+    font-size: 1.2em;
+}
+
+.progress {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.progress-emoji {
+    display: inline-block;
+    font-size: 1.5em; /* Ajusta o tamanho do emoji */
+    transition: transform 0.5s ease; /* Suaviza a animação do movimento */
+    position: absolute;
+    left: 0;
+}
+
+#progressTrail {
+    white-space: nowrap;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#toggleButton {
+    padding: 10px 20px;
+}
+
+#resetProgressButton {
+    padding: 10px 20px;
+}
+
+.elapsed-time {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.loading-bar {
+    margin-top: 20px;
+    font-size: 1em;
+    color: #fff;
+}
+
+.activity-input {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.activity-input input {
+    padding: 5px;
+    font-size: 1em;
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #fff;
+    margin-bottom: 5px;
+    width: 40px; /* Ajustado para aceitar até 2 dígitos */
+    text-align: center;
+}
+
+.activity-input button {
+    font-size: 0.8em;
+    padding: 5px 10px;
+    margin-top: 5px;
+}
+
+.bottom-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.flashing-word {
+    font-size: 1.0em;
+    color: #e5e508; /* Yellow*/
+    margin-top: 10px;
+    opacity: 1; /* Ensure opacity starts at 1 */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity */
+}
+
+.flashing-word.fade {
+    opacity: 0; /* Fade out */
+}
+
+@keyframes flash {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.checklist {
+    font-size: 0.8em;
+    color: #ff0;
+    margin-top: 5px;
+}
+
+.checklist .star {
+    font-size: 1.5em;
+    margin-right: 5px;
+}
+
+.music-controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Aligns the buttons in the center */
+    gap: 10px; /* Small gap between the buttons */
+}
+
+#selectMusicButton, #pauseMusicButton {
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#selectMusicButton:hover, #pauseMusicButton:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#selectMusicButton:active, #pauseMusicButton:active {
+    transform: scale(0.98);
+}
+
+

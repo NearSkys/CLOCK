@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Watch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="clock-container">
+        <div class="digital-clock" id="digitalClock"></div>
+
+        <div class="progress-bar">
+            <span class="progress-time" id="progressTimeStart">00:00</span>
+            <div class="progress">
+                <span id="progressDot" class="progress-emoji">🌌</span>
+                <span id="progressTrail">---------------</span>
+            </div>
+            <span class="progress-time" id="progressTimeEnd">30:00</span>
+        </div>
+
+        <div class="buttons">
+            <button id="toggleButton">☄️</button>
+            <button id="resetProgressButton">🐬</button>
+        </div>
+
+        <div class="elapsed-time" id="elapsedTime">集中時間: 00:00:00</div>
+
+        <div class="loading-bar" id="loadingBar">▒▒▒▒▒▒▒▒▒▒ 0%</div>
+
+        <div class="activity-input">
+            <input type="number" id="activityGoal" placeholder="時間">
+            <button id="setGoalButton">設定</button>
+        </div>
+
+        <div class="bottom-section">
+            <div class="flashing-word" id="flashingWord" style="visibility: visible;">🐧 ྀི</div>
+            <div class="checklist" id="checklist"></div>
+        </div>
+
+        <div class="music-controls">
+            <button id="selectMusicButton">🌎</button>
+            <button id="pauseMusicButton">🌊</button>
+            <audio id="backgroundMusic" loop></audio>
+            <audio id="alertSound" src="alert.mp3" preload="auto"></audio>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
