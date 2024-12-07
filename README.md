@@ -16,7 +16,7 @@ This is an interactive clock application that uses a local Node.js server. It co
 Before you start, make sure you have the following installed on your machine:
 
 - [Node.js](https://nodejs.org/) 
-- A modern web browser 
+- Browser 
 
 ## How to Run
 
